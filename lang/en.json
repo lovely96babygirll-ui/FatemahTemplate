@@ -1,0 +1,11 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About Us",
+  "nav.products": "Our Products",
+  "nav.services": "Our Services",
+  "nav.blog": "Blog",
+  "nav.contact": "Contact Us",
+
+  "home.hero.title": "Biotech House",
+  "home.hero.desc": "Advanced laboratory and biotechnology solutions"
+}
