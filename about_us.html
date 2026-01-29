@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Biotech House</title>
+ <base href="/b/">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/lang.js"></script>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+ <div id="navbar"></div>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero about-hero">
+  <div class="hero-overlay">
+    <h1 data-i18n="about.hero.title"></h1>
+    <p data-i18n="about.hero.text"></p>
+  </div>
+</section>
+
+
+<!-- ================= VISION ================= -->
+<section class="about-section container">
+
+  <div class="about-text">
+    <h2><span data-i18n="about.vision.title"></span></h2>
+
+    <p data-i18n="about.vision.text1"></p>
+    <p data-i18n="about.vision.text2"></p>
+    <p data-i18n="about.vision.text3"></p>
+  </div>
+
+  <div class="about-images grid-vision">
+    <img src="images/about1.jpg">
+    <img src="images/about2.jpg">
+    <img src="images/about3.jpg">
+  </div>
+
+</section>
+
+
+<!-- ================= MISSION ================= -->
+<section class="about-section container reverse">
+
+  <div class="about-images">
+    <img src="images/about4.jpg">
+  </div>
+
+  <div class="about-text">
+    <h2 data-i18n="about.mission.title"></h2>
+
+    <p data-i18n="about.mission.text1"></p>
+    <p data-i18n="about.mission.text2"></p>
+    <p data-i18n="about.mission.text3"></p>
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+ <div id="footer"></div>
+  <script>
+        $("#navbar").load("/b/partials/navbar.html");
+        $("#footer").load("/b/partials/footer.html");
+    </script>
+
+</body>
+</html>
