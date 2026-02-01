@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- ================= Header ================= -->
+<meta charset="UTF-8">
+<title>Biotech House | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/b/">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Biotech House | Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/b/">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-
+<body data-page="home">
     <div id="navbar"></div>
-
     <!-- ================= HERO ================= -->
     <header class="hero">
         <div class=""></div>
         <div class="container">
             <div class="row min-vh-100 align-items-center">
                 <div class="col-lg-6 text-white ">
-                    <h1 data-key="hero_title">
-                        Your Trusted Partner in Biotechnology & Laboratory Solutions
+                    <h1 data-key="hero_title" data-i18n="home.hero.title">
                     </h1>
-                    <p data-key="hero_desc">
-                        We specialize in supplying high-quality laboratory equipment, medical devices,
-                        and scientific solutions for research centers and healthcare institutions.
+                    <p data-key="hero_desc" data-i18n="home.hero.subtitle">
+
                     </p>
                     <div class="d-flex gap-3">
-                        <a class="btn btn-primary" data-key="view_products">View Products</a>
-                        <a class="btn btn-outline-light" data-key="contact_us">Contact Us</a>
+                        <a class="btn btn-primary" data-key="view_products" data-i18n="home.hero.view"></a>
+                        <a class="btn btn-outline-light" data-key="contact_us" data-i18n="home.hero.cta"></a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <!-- ================= ABOUT ================= -->
     <section class="about py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h2 data-key="about_title">About Us</h2>
-                    <p data-key="about_desc">
-                        Biotech House is a specialized scientific supplier supporting laboratories
-                        and research institutions with innovative solutions.
+                    <h2 data-key="about_title" data-i18n="home.about.title"></h2>
+                    <p data-key="about_desc" data-i18n="home.about.text">
                     </p>
-                    <a class="btn btn-outline-primary" data-key="more">More</a>
+                    <a class="btn btn-outline-primary" data-key="more" data-i18n="home.about.more"></a>
                 </div>
                 <div class="col-lg-6">
                     <img src="assets/img/about_us.png" class="img-fluid rounded">
@@ -58,37 +49,36 @@
     <!-- ================= PRODUCTS ================= -->
     <section class="products py-5">
         <div class="container text-center">
-            <h2 data-key="products">Our Products</h2>
-            <p data-key="products_desc">
-                A wide range of laboratory and biotechnology products
+            <h2 data-key="products" data-i18n="home.products.title"></h2>
+            <p data-key="products_desc" data-i18n="home.products.text">
             </p>
 
             <div class="row g-4 mt-4">
                 <div class="col-md-3">
                     <div class="product-card">
                         <img src="assets/img/prod1.png">
-                        <h6>Laboratory Equipment</h6>
+                        <h6 data-i18n="home.products.pr1"></h6>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="product-card">
                         <img src="assets/img/prod2.png">
-                        <h6>PCR & Molecular Biology</h6>
+                        <h6 data-i18n="home.products.pr2"></h6>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="product-card">
                         <img src="assets/img/prod3.png">
-                        <h6>Glassware & Consumables</h6>
+                        <h6 data-i18n="home.products.pr3"></h6>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="product-card">
                         <img src="assets/img/prod4.png">
-                        <h6>Medical Supplies</h6>
+                        <h6 data-i18n="home.products.pr4"></h6>
                     </div>
                 </div>
             </div>
@@ -100,18 +90,18 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-white">
-                    <h2 data-key="services">Our Services</h2>
-                    <p data-key="services_desc">
-                        We deliver end-to-end laboratory solutions ensuring efficiency and quality.
+                    <h2 data-key="services" data-i18n="home.services.title">Our Services</h2>
+                    <p data-key="services_desc" data-i18n="home.services.text">
+
                     </p>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="row g-3">
-                        <div class="col-6 service-box">Laboratory Equipment Supply</div>
-                        <div class="col-6 service-box">Installation & Support</div>
-                        <div class="col-6 service-box">Maintenance</div>
-                        <div class="col-6 service-box">Scientific Consultation</div>
+                        <div class="col-6 service-box" data-i18n="home.services.item1"></div>
+                        <div class="col-6 service-box" data-i18n="home.services.item2"></div>
+                        <div class="col-6 service-box" data-i18n="home.services.item3"></div>
+                        <div class="col-6 service-box" data-i18n="home.services.item4"></div>
                     </div>
                 </div>
             </div>
@@ -126,74 +116,78 @@
                     <img src="assets/img/trust.png" class="img-fluid rounded">
                 </div>
                 <div class="col-lg-6">
-                    <h2 data-key="trust">Trust & Partners</h2>
+                    <h2 data-key="trust" data-i18n="home.trust.title"></h2>
                     <ul>
-                        <li>High-quality certified products</li>
-                        <li>Scientific expertise</li>
-                        <li>Reliable technical support</li>
-                        <li>Long-term partnerships</li>
+                        <li data-i18n="home.trust.item1"></li>
+                        <li data-i18n="home.trust.item2"></li>
+                        <li data-i18n="home.trust.item3"></li>
+                        <li data-i18n="home.trust.item4"></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-<section class="get-in-touch">
-    <div class="container">
-        <div class=" row min-vh-100 align-items-center">
-            <!-- <div class="col get-in-touch"> -->
-                 <p data-key="about_desc">
-                        Biotech House is a specialized scientific supplier supporting laboratories
-                        and research institutions with innovative solutions.
+    <section class="get-in-touch">
+        <div class="overlay"></div>
+
+        <div class="container position-relative">
+            <div class="row min-vh-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8">
+
+                    <p class="get-in-touch-text" data-i18n="home.get-in-touch.title"> <br>
                     </p>
-                    <a class="btn btn-outline-primary" data-key="more">More</a>
-            <!-- </div> -->
+
+                    <a href="contact.html" class="btn get-in-touch-btn">
+                        <span data-i18n="home.get-in-touch.cta">Contact Us</span>
+                        <svg class="arrow-svg" width="16" height="16" viewBox="0 0 24 24">
+                            <path d="M5 12h14M13 5l6 7-6 7" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
     <!-- ================= BLOG ================= -->
     <section class="blog py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4" data-key="blog">Our Latest Blogs</h2>
+            <h2 class="text-center mb-4" data-key="blog" data-i18n="home.blog.title"></h2>
 
             <div class="row g-4">
                 <div class="col-md-3 blog-card">
                     <img src="assets/img/blog1.png">
-                    <h6>How much money do top income earners make?</h6>
+                    <h6 data-i18n="home.blog.item1"></h6>
                 </div>
                 <div class="col-md-3 blog-card">
                     <img src="assets/img/blog2.png">
-                    <h6>Modern laboratory innovations</h6>
+                    <h6 data-i18n="home.blog.item2"></h6>
                 </div>
                 <div class="col-md-3 blog-card">
                     <img src="assets/img/blog3.png">
-                    <h6>Biotechnology trends</h6>
+                    <h6 data-i18n="home.blog.item3"></h6>
                 </div>
                 <div class="col-md-3 blog-card">
                     <img src="assets/img/blog4.png">
-                    <h6>Scientific research insights</h6>
+                    <h6 data-i18n="home.blog.item4"></h6>
                 </div>
             </div>
         </div>
     </section>
 
     <div id="footer"></div>
-
-    <script src="/b/assets/js/jquery.min.js"></script>
-    <script src="/b/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/b/assets/js/lang.js"></script>
-    <script src="/b/assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
-const BASE_PATH = getBasePath();
-
-$("#navbar").load(BASE_PATH + "/partials/navbar.html");
-$("#navbar").load(APP.BASE_PATH + "/partials/navbar.html", function () {
-    fixNavLinks();
-});
-
-$("#footer").load(BASE_PATH + "/partials/footer.html");
-
+        $("#navbar").load("partials/navbar.html", function () {
+            setActiveNavLink();
+            const lang = getCookie('lang') || 'en';
+            updateLangDropdown(lang);
+        });
+        $("#footer").load("partials/footer.html");
     </script>
-
 </body>
 
 </html>

@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us - Biotech House</title>
- <base href="/b/">
-<link rel="stylesheet" href="css/style.css">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="js/lang.js"></script>
-</head>
+<title>Biotech House | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/b/">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<body data-page="home">
+  <!-- ================= NAVBAR ================= -->
+  <div id="navbar"></div>
+  <!-- ================= HERO ================= -->
+  <!-- ================= HERO ================= -->
+<header class="hero">
+  <div class=""></div>
+  <div class="container">
+    <div class="row min-vh-100 align-items-center">
+      <div class="col-lg-6 text-white ">
+        <h1 data-key="hero_title" data-i18n="home.hero.title">
+        </h1>
+        <p data-key="hero_desc" data-i18n="home.hero.subtitle">
 
-<body>
-
-<!-- ================= NAVBAR ================= -->
- <div id="navbar"></div>
-
-
-<!-- ================= HERO ================= -->
-<section class="hero about-hero">
-  <div class="hero-overlay">
-    <h1 data-i18n="about.hero.title"></h1>
-    <p data-i18n="about.hero.text"></p>
+        </p>
+        <div class="d-flex gap-3">
+          <a class="btn btn-primary" data-key="view_products" data-i18n="home.hero.view"></a>
+          <a class="btn btn-outline-light" data-key="contact_us" data-i18n="home.hero.cta"></a>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</header>
 
 
-<!-- ================= VISION ================= -->
-<section class="about-section container">
+  <!-- ================= VISION ================= -->
+  <section class="about-section container">
+    <div class="row">
+      <div class="col-6">
+        <div class="about-text">
+          <h2><span data-i18n="about.vision.title"></span></h2>
+          <p data-i18n="about.vision.text1">
+            jjjjjjjjjjjjjj bbbbbbbbbbbbbbbbbbbbb
+          </p>
 
-  <div class="about-text">
-    <h2><span data-i18n="about.vision.title"></span></h2>
-
-    <p data-i18n="about.vision.text1"></p>
-    <p data-i18n="about.vision.text2"></p>
-    <p data-i18n="about.vision.text3"></p>
-  </div>
-
-  <div class="about-images grid-vision">
-    <img src="images/about1.jpg">
-    <img src="images/about2.jpg">
-    <img src="images/about3.jpg">
-  </div>
-
-</section>
-
-
-<!-- ================= MISSION ================= -->
-<section class="about-section container reverse">
-
-  <div class="about-images">
-    <img src="images/about4.jpg">
-  </div>
-
-  <div class="about-text">
-    <h2 data-i18n="about.mission.title"></h2>
-
-    <p data-i18n="about.mission.text1"></p>
-    <p data-i18n="about.mission.text2"></p>
-    <p data-i18n="about.mission.text3"></p>
-  </div>
-
-</section>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="about-images grid-vision">
+          <img src="assets/img/about_vision.png">
+        </div>
+      </div>
+    </div>
 
 
-<!-- ================= FOOTER ================= -->
- <div id="footer"></div>
-  <script>
-        $("#navbar").load("/b/partials/navbar.html");
-        $("#footer").load("/b/partials/footer.html");
+
+
+  </section>
+
+
+  <!-- ================= MISSION ================= -->
+  <section class="about-section container reverse">
+    <div class="row">
+      <div class="col-6">
+        <div class="about-images">
+          <img src="assets/img/about_mission.png">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="about-text">
+          <h2 data-i18n="about.mission.title"></h2>
+          <p data-i18n="about.mission.text1"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/main.js"></script>
+   <script>
+        $("#navbar").load("partials/navbar.html", function () {
+          setActiveNavLink();
+            const lang = getCookie('lang') || 'en';
+            updateLangDropdown(lang);
+        });
+        $("#footer").load("partials/footer.html");
     </script>
-
 </body>
 </html>

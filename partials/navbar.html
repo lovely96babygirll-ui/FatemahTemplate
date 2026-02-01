@@ -1,22 +1,55 @@
-<nav class="navbar navbar-expand-lg bg-white shadow-sm">
-<div class="container">
- <a class="navbar-brand" href="#">
-      <img src="assets/img/logo.png" height="40">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.png" height="40" alt="Logo">
     </a>
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link "  href="#" data-link="index"  data-i18n="nav.home"></a></li>
-<li class="nav-item"><a class="nav-link nav-dynamic"  href="/about_us.html" data-link="about" data-i18n="nav.about"></a></li>
-<li class="nav-item"><a class="nav-link"  href=".html" data-link="products" data-i18n="nav.products"></a></li>
-<li class="nav-item"><a class="nav-link"  href=".html" data-link="services" data-i18n="nav.services"></a></li>
-<li class="nav-item"><a class="nav-link"  href=".html" data-link="blog" data-i18n="nav.blog"></a></li>
-<li class="nav-item"><a class="nav-link"  href=".html" data-link="contact" data-i18n="nav.contact"></a></li>
-</ul>
-<div class="dropdown">
-  <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
-    🌐
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item lang-btn" data-lang="en">English</a></li>
-    <li><a class="dropdown-item lang-btn" data-lang="ar">العربية</a></li>
-  </ul>
-</div>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html" data-page= "index" data-i18n="nav.home"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_us.html" data-page="about_us" data-i18n="nav.about"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html" data-page="" data-i18n="nav.products"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html" data-page="" data-i18n="nav.services"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blogs.html" data-page="" data-i18n="nav.blog"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" data-page="" data-i18n="nav.contact"></a>
+        </li>
+      </ul>
+
+      <!-- Language Dropdown (RIGHT SIDE) -->
+      <div class="dropdown ms-lg-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+          <img id="activeLangFlag"  src="assets/img/flags/gb.svg" width="30" alt="United Kingdom">
+          <span id="activeLang">EN</span>
+
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end" id="langDropdownList">
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
+

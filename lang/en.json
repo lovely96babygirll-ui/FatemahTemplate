@@ -1,11 +1,65 @@
 {
+ "home.title":"Biotech House | Home",
   "nav.home": "Home",
   "nav.about": "About Us",
   "nav.products": "Our Products",
   "nav.services": "Our Services",
   "nav.blog": "Blog",
   "nav.contact": "Contact Us",
+  "nav.lang.en": "English",
+  "nav.lang.ar": "Arabic",
 
-  "home.hero.title": "Biotech House",
-  "home.hero.desc": "Advanced laboratory and biotechnology solutions"
+  "home.hero.title": " Your Trusted Partner in Biotechnology & Laboratory Solutions",
+  "home.hero.subtitle": "We specialize in supplying high-quality laboratory equipment, medical devices,and scientific solutions for research centers and healthcare institutions.",
+  "home.hero.view": "View Products",
+  "home.hero.cta": "Contact Us",
+  
+  "home.about.title":"About Biotech House",
+  "home.about.text": "Biotech House is a specialized scientific supplier supporting laboratories and research institutions with innovative solutions.",
+  "home.about.more": "More",
+
+ 
+  "home.products.title": "Our Products",
+  "home.products.text": "High-quality laboratory reagents and instruments",
+  "home.products.more": "More",
+  "home.products.pr1": "Laboratory Equipment",
+  "home.products.pr2": "PCR & Molecular Biology",
+  "home.products.pr3": "Glassware & Consumables",
+  "home.products.pr4": "Medical Supplies",
+
+  "home.trust.title": "Trust & Partners",
+  "home.trust.item1": "High-quality certified products",
+  "home.trust.item2": "Scientific expertise",
+  "home.trust.item3": "Reliable technical support",
+  "home.trust.item4": "Long-term partnerships",
+
+  "home.get-in-touch.title": " Biotech House is a specialized scientific supplier supporting laboratories and research institutions with innovative solutions.",
+  "home.get-in-touch.cta": "Contact Us",
+
+ "home.services.title": "Our Services",
+ "home.services.text": "We deliver end-to-end laboratory solutions ensuring efficiency and quality.",
+  "home.services.item1": "Laboratory Equipment Supply",
+  "home.services.item2": "Installation & Support",
+  "home.services.item3": "Maintenance",
+  "home.services.item4": "Scientific Consultation",
+
+  "home.blog.title": "Our Latest Blogs",
+  "home.blog.item1": "How much money do top income earners make?",
+  "home.blog.item2": "Modern laboratory innovations",
+  "home.blog.item3": "Biotechnology trends",
+  "home.blog.item4": "Scientific research insights",
+
+  "home.cta.title": "Ready to work with us?",
+  "home.cta.button": "Get in Touch",
+
+
+  "footer.about": "Biotech House is a leading company providing innovative biotech solutions.",
+  "footer.links.title": "Quick Links",
+  "footer.contact.title": "Contact Us",
+  "footer.contact.address": "Riyadh, Saudi Arabia",
+  "footer.follow": "Follow Us",
+  "footer.copyright": "Biotech House. All rights reserved.",
+  "footer.privacy": "Privacy Policy",
+  "footer.terms": "Terms & Conditions"
 }
+
